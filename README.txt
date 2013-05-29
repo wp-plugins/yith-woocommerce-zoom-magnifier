@@ -37,6 +37,17 @@ Are you a developer? Want to customize the templates or the style of the plugin?
 2. Upload the plugin folder into the `wp-content/plugins/` directory of your WordPress site.
 3. Activate `YITH WooCommerce Zoom Magnifier` from Plugins page
 
+== Support ==
+
+Hi there, we have good news here: all our plugins are released for free. Wow!
+Already knew it, right?! Great, but maybe you do not know that: if you're looking for how to install the plugins or how to use them within your Wordpress installations, which is the right way to ask support?
+That's the way:
+
+* Register on http://yithemes.com
+* Go to Support > Get Support
+
+Here we provide support, not on wordpress.org were, usually we do not read topics. It's better to follow us or write on our forum!
+
 == Frequently Asked Questions ==
 
 = The size of the Zoom image is not the size I setted. Why? =
