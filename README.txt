@@ -31,7 +31,6 @@ YITH WooCommerce Zoom Magnifier will add a new tab called "Magnifier" below the 
 
 Are you a developer? Want to customize the templates or the style of the plugin? Read on the [documentation](http://yithemes.com/docs-plugins/yith_magnifier/) and discover how to do that.
 
-
 = Support =
 
 Hi there, we have good news here: all our plugins are released for free. Wow!
