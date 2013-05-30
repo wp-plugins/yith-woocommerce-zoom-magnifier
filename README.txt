@@ -1,23 +1,23 @@
-=== YITH WooCommerce Zoom Magnifier ===
+=== YITH Manitenance Mode ===
 
 Contributors: yithemes
-Tags: zoom, magnifier, woocommerce, products, themes, yit, e-commerce, shop
+Tags: maintenance, construction, woocommerce, products, themes, yit
 Requires at least: 3.5.1
 Tested up to: 3.5.1
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-YITH WooCommerce Zoom Magnifier is a Wordpress plugins that enables you to add a zoom effect to product images.
+YITH Maintenance Mode give you the ability to have a simple Maintenance Mode page for your website in under construction.
+
 
 == Description ==
 
-= Improve the user experience, improve your sales =
+If you're working on your website and would like to make it known to your visitors, install the plugin `YITH Maintenance Mode` to quickly set
+a lovely page customizable to show to your visitors to warn them of the ongoing maintenance.
 
-Offer to your visitors a chance to inspect in detail the quality of your products. With YITH WooCommerce Zoom Magnifier you can add a zoom effect to all your product images.
-The Wordpress plugin also adds a slider below the featured image with your product gallery images.
+A working demo is available [here](http://plugins.yithemes.com/yith-maintenance-mode/). Full documentation is available [here](http://yithemes.com/docs-plugins/yith_maintenance_mode/).
 
-A working demo is available [here](http://demo.yithemes.com/room09/product/africa-style/). Full documentation is available [here](http://yithemes.com/docs-plugins/yith_magnifier/).
 
 = Installation =
 
@@ -25,30 +25,41 @@ Once you have installed the plugin, you just need to activate the plugin in orde
 
 = Configuration =
 
-YITH WooCommerce Zoom Magnifier will add a new tab called "Magnifier" below the Woocommerce -> Settings menu. Here you are able to configure all the plugin settings.
+YITH Maintenance Mode will add a new page under Appearance -> Maintenance Mode, where you can configure the plugin and customize the frontend page.
 
 = Developer =
 
-Are you a developer? Want to customize the templates or the style of the plugin? Read on the [documentation](http://yithemes.com/docs-plugins/yith_magnifier/) and discover how to do that.
+Are you a developer? Want to customize the templates or the style of the plugin? Read on the [documentation](http://yithemes.com/docs-plugins/yith_maintenance_mode/) and discover how to do that.
+
+= Support =
+
+Hi there, we have good news here: all our plugins are released for free. Wow!
+Already knew it, right?! Great, but maybe you do not know that: if you're looking for how to install the plugins or how to use them within your Wordpress installations, which is the right way to ask support?
+That's the way:
+
+* Register on http://yithemes.com
+* Go to Support > Get Support
+
+Here we provide support, not on wordpress.org were, usually we do not read topics. It's better to follow us or write on our forum!
 
 == Installation ==
 
 1. Unzip the downloaded zip file.
 2. Upload the plugin folder into the `wp-content/plugins/` directory of your WordPress site.
-3. Activate `YITH WooCommerce Zoom Magnifier` from Plugins page
+3. Activate `YITH Maintenance Mode` from Plugins page
 
 == Frequently Asked Questions ==
 
-= The size of the Zoom image is not the size I setted. Why? =
-If you enabled the plugin after you uploaded the images of the product you need to [regenerate the thumbnails](http://wordpress.org/extend/plugins/regenerate-thumbnails/ "regenerate the thumbnails") before to use it. Another reason could be that the size setted for the zoom images is greather than the original image size.
+= Can I customize the maintenance mode page? =
+Yes, the page is a simple template and you can override it by putting the file template "maintenance.php" inside the theme folder. You can also customize the style by adding your custom CSS in the specific option of the settings.
 
-= I'm not able to change the sizes of Zoom Image. Why? =
-The size of the Zoom Image is automatically setted. If you want to change these values you just need to untick the option Forcing Zoom Image sizes.
+= Have I deactive the plugin to deactive the maintenance mode page? =
+No, you can deactive the maintenance mode page even if the plugin is active.
 
 == Screenshots ==
 
-1. The plugin at work displaying the magnifier
-2. The Magnifier settings page
+1. The maintenance mode page
+2. The general settings
 
 == Changelog ==
 
@@ -58,7 +69,7 @@ The size of the Zoom Image is automatically setted. If you want to change these 
 
 == Suggestions ==
 
-If you have suggestions about how to improve YITH WooCommerce Zoom Magnifier, you can [write us](mailto:plugins@yithemes.com "Your Inspiration Themes") so we can bundle them into YITH Zoom WooCommerce Magnifier.
+If you have suggestions about how to improve YITH Maintenance Mode, you can [write us](mailto:plugins@yithemes.com "Your Inspiration Themes") so we can bundle them into YITH Maintenance Mode.
 
 == Translators ==
 
@@ -67,11 +78,11 @@ If you have suggestions about how to improve YITH WooCommerce Zoom Magnifier, yo
 * Italiano
 
 If you have created your own language pack, or have an update for an existing one, you can send [gettext PO and MO file](http://codex.wordpress.org/Translating_WordPress "Translating WordPress")
-[use](http://yithemes.com/contact/ "Your Inspiration Themes") so we can bundle it into YITH WooCommerce Zoom Magnfier Languages.
+[use](http://yithemes.com/contact/ "Your Inspiration Themes") so we can bundle it into YITH Maintenance Mode Languages.
 
 == Documentation ==
 
-Full documentation is available [here](http://yithemes.com/docs-plugins/yith_magnifier/).
+Full documentation is available [here](http://yithemes.com/docs-plugins/yith_maintenance_mode/).
 
 == Upgrade notice ==
 
