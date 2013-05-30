@@ -39,7 +39,6 @@ if( !class_exists( 'YITH_WCMG' ) ) {
 		 * @since 1.0.0
 		 */
 		public function __construct() {
-			load_plugin_textdomain( 'yit', false, YITH_WCMG_DIR . 'languages/' ); 
 			
 			// actions
 			add_action( 'init', array( $this, 'init' ) );
