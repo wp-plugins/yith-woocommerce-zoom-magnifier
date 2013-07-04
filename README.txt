@@ -17,7 +17,13 @@ YITH WooCommerce Zoom Magnifier is a Wordpress plugins that enables you to add a
 Offer to your visitors a chance to inspect in detail the quality of your products. With YITH WooCommerce Zoom Magnifier you can add a zoom effect to all your product images.
 The Wordpress plugin also adds a slider below the featured image with your product gallery images.
 
-A working demo is available [here](http://demo.yithemes.com/room09/product/africa-style/). Full documentation is available [here](http://yithemes.com/docs-plugins/yith_magnifier/).
+Working demo ara available:
+
+**[LIVE DEMO 1](http://demo.yithemes.com/room09/product/africa-style/)** - **[LIVE DEMO 2](http://demo.yithemes.com/bazar/shop/ankle-shoes/)**
+
+
+Full documentation is available [here](http://yithemes.com/docs-plugins/yith_wishlist/).
+
 
 = Installation =
 
