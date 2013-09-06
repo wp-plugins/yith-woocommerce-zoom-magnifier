@@ -1,10 +1,10 @@
- <?php
+<?php
 /**
  * Frontend class
  *
  * @author Your Inspiration Themes
  * @package YITH WooCommerce Zoom Magnifier
- * @version 1.0.5
+ * @version 1.0.6
  */
 
 if ( !defined( 'YITH_WCMG' ) ) { exit; } // Exit if accessed directly
