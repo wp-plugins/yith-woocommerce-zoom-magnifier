@@ -4,7 +4,7 @@
  *
  * @author 		YIThemes
  * @package 	YITH_Magnifier/Templates
- * @version     1.0.0
+ * @version     1.1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -23,10 +23,12 @@ $enable_slider = get_option('yith_wcmg_enableslider') == 'yes' ? true : false;
             $image_link  		= wp_get_attachment_url( get_post_thumbnail_id() );
             list( $magnifier_url, $magnifier_width, $magnifier_height ) = wp_get_attachment_image_src( get_post_thumbnail_id(), "shop_magnifier" );
 
+            $placeholder = function_exists('wc_placeholder_img_src') ? wc_placeholder_img_src() : woocommerce_placeholder_img_src();
+
             echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="yith_magnifier_zoom woocommerce-main-image" title="%s">%s</a>', $magnifier_url, $image_title, $image ), $post->ID );
 
         } else {
-            echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="yith_magnifier_zoom woocommerce-main-image"><img src="%s" alt="Placeholder" /></a>', woocommerce_placeholder_img_src(), woocommerce_placeholder_img_src() ), $post->ID );
+            echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="yith_magnifier_zoom woocommerce-main-image"><img src="%s" alt="Placeholder" /></a>', $placeholder, $placeholder ), $post->ID );
         }
         ?>
 

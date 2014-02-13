@@ -4,7 +4,7 @@
  *
  * @author Your Inspiration Themes
  * @package YITH WooCommerce Zoom Magnifier
- * @version 1.0.8
+ * @version 1.1.0
  */
 
 if ( !defined( 'YITH_WCMG' ) ) { exit; } // Exit if accessed directly
@@ -63,7 +63,11 @@ if( !class_exists( 'YITH_WCMG_Frontend' ) ) {
 		 * @since 1.0.0
 		 */
 		public function show_product_images() {
-			woocommerce_get_template( 'single-product/product-image-magnifier.php', array(), '', YITH_WCMG_DIR . 'templates/' );
+
+            /** FIX WOO 2.1 */
+            $wc_get_template = function_exists('wc_get_template') ? 'wc_get_template' : 'woocommerce_get_template';
+
+            $wc_get_template( 'single-product/product-image-magnifier.php', array(), '', YITH_WCMG_DIR . 'templates/' );
 		}
 		
 		
@@ -75,7 +79,11 @@ if( !class_exists( 'YITH_WCMG_Frontend' ) ) {
 		 * @since 1.0.0
 		 */
 		public function show_product_thumbnails() {
-			woocommerce_get_template( 'single-product/product-thumbnails-magnifier.php', array(), '', YITH_WCMG_DIR . 'templates/' );
+
+            /** FIX WOO 2.1 */
+            $wc_get_template = function_exists('wc_get_template') ? 'wc_get_template' : 'woocommerce_get_template';
+
+            $wc_get_template( 'single-product/product-thumbnails-magnifier.php', array(), '', YITH_WCMG_DIR . 'templates/' );
 		}
 
 

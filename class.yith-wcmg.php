@@ -4,7 +4,7 @@
  *
  * @author Your Inspiration Themes
  * @package YITH WooCommerce Zoom Magnifier
- * @version 1.0.8
+ * @version 1.1.0
  */
 
 if ( !defined( 'YITH_WCMG' ) ) { exit; } // Exit if accessed directly
@@ -22,7 +22,7 @@ if( !class_exists( 'YITH_WCMG' ) ) {
          * @var string
          * @since 1.0.0
          */
-        public $version = '1.0.8';
+        public $version = '1.1.0';
         
         /**
          * Plugin object

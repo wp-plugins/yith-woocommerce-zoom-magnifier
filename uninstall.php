@@ -4,7 +4,7 @@
  *
  * @author Your Inspiration Themes
  * @package YITH WooCommerce Zoom Magnifier
- * @version 1.0.8
+ * @version 1.1.0
  */
 
 // If uninstall not called from WordPress exit
