@@ -44,7 +44,7 @@ function yith_magnifier_constructor() {
     load_plugin_textdomain( 'yit', false, dirname( plugin_basename( __FILE__ ) ). '/languages/' );
 
 
-    yit_add_thumbnails_slider_direction();
+    add_option( 'yith_wcmg_slider_direction', apply_filters( 'yith_wcmg_slider_direction', 'left' ) );
 
     define( 'YITH_WCMG', true );
     define( 'YITH_WCMG_URL', plugin_dir_url( __FILE__ ) );
