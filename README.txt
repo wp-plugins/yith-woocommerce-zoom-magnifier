@@ -4,7 +4,7 @@ Contributors: yithemes
 Tags: zoom, magnifier, woocommerce, products, themes, yit, e-commerce, shop
 Requires at least: 3.5.1
 Tested up to: 3.8.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,10 @@ The size of the Zoom Image is automatically setted. If you want to change these 
 2. The Magnifier settings page
 
 == Changelog ==
+
+= 1.1.1 =
+
+* Fixed: Thumbnails slider direction on single product page
 
 = 1.1.0 =
 

@@ -4,7 +4,7 @@
  *
  * @author  Your Inspiration Themes
  * @package YITH WooCommerce Zoom Magnifier
- * @version 1.1.0
+ * @version 1.1.1
  */
 
 if ( ! defined( 'YITH_WCMG' ) ) {
@@ -412,20 +412,7 @@ if ( ! class_exists( 'YITH_WCMG_Admin' ) ) {
                         'default' => 'yes',
                         'type'    => 'checkbox'
                     ),
-                    /*
-                                        array(
-                                            'name' => __( 'Slider direction', 'yit' ),
-                                            'desc' => __( 'The direction to scroll the carousel.', 'yit' ),
-                                            'id'   => 'yith_wcmg_slider_direction',
-                                            'std'  => 'yes',
-                                            'default' => 'yes',
-                                            'type' => 'select',
-                                            'options' => array(
-                                                'left' => __('Left', 'yit' ),
-                                                'right' => __('Right', 'yit' )
-                                            )
-                                        ),
-                    */
+
                     array( 'type' => 'sectionend', 'id' => 'yith_wcmg_slider_end' )
                 )
             );

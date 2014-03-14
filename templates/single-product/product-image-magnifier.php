@@ -4,7 +4,7 @@
  *
  * @author 		YIThemes
  * @package 	YITH_Magnifier/Templates
- * @version     1.1.0
+ * @version     1.1.1
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -46,7 +46,6 @@ $enable_slider = get_option('yith_wcmg_enableslider') == 'yes' ? true : false;
             responsive: <?php echo get_option('yith_wcmg_slider_responsive') == 'yes' ? 'true' : 'false' ?>,
             circular: <?php echo get_option('yith_wcmg_slider_circular') == 'yes' ? 'true' : 'false' ?>,
             infinite: <?php echo get_option('yith_wcmg_slider_infinite') == 'yes' ? 'true' : 'false' ?>,
-            //direction: '<?php //echo get_option('yith_wcmg_slider_direction') == 'yes' ? 'left' : get_option('yith_wcmg_slider_direction') ?>',
             direction: 'left',
             debug: false,
             auto: false,
