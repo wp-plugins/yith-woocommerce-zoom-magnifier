@@ -229,14 +229,3 @@ if( !function_exists('yit_curPageURL') ) {
         return $pageURL;
     }
 }
-
-if( !function_exists('yit_add_thumbnails_slider_direction') ) {
-    /**
-     * Retrieve the current complete url
-     *
-     * @since 1.1.1
-     */
-    function yit_add_thumbnails_slider_direction() {
-       add_option( 'yith_wcmg_slider_direction', apply_filters( 'yith_wcmg_slider_direction', 'left' ) );
-    }
-}
