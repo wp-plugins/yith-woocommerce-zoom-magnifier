@@ -4,7 +4,7 @@
  *
  * @author  Your Inspiration Themes
  * @package YITH WooCommerce Zoom Magnifier
- * @version 1.1.1
+ * @version 1.1.2
  */
 
 if ( ! defined( 'YITH_WCMG' ) ) {
@@ -78,7 +78,9 @@ if ( ! class_exists( 'YITH_WCMG_Admin' ) ) {
 
             //Filters
             add_filter( 'woocommerce_settings_tabs_array', array( $this, 'add_tab_woocommerce' ), 30 );
-            add_filter( 'woocommerce_catalog_settings', array( $this, 'add_catalog_image_size' ) );
+            if ( ! function_exists( 'WC' ) ) {
+                add_filter( 'woocommerce_catalog_settings', array( $this, 'add_catalog_image_size' ) );
+            }
 
             //Apply filters
             $this->banner_url = apply_filters( 'yith_wcmg_banner_url', $this->banner_url );
@@ -210,6 +212,29 @@ if ( ! class_exists( 'YITH_WCMG_Admin' ) ) {
          * @since 1.0.0
          */
         protected function _initOptions() {
+            $image_size = array();
+
+            if ( function_exists( 'WC' ) ) {
+                $image_size = array(
+                    'name'     => __( 'Catalog Zoom Images', 'yit' ),
+                    'desc'     => __( 'The size of images used within the magnifier box', 'yit' ),
+                    'id'       => 'woocommerce_magnifier_image',
+                    'css'      => '',
+                    'type'     => 'image_width',
+                    'default'  => array(
+                        'width'  => 600,
+                        'height' => 600,
+                        'crop'   => true
+                    ),
+                    'std'      => array(
+                        'width'  => 600,
+                        'height' => 600,
+                        'crop'   => true
+                    ),
+                    'desc_tip' => true
+                );
+            }
+
             $options = array(
                 'general'   => array(
                     array(
@@ -265,6 +290,8 @@ if ( ! class_exists( 'YITH_WCMG_Admin' ) ) {
                         'type'    => 'text',
                     ),
 
+                    $image_size,
+
                     array(
                         'name'    => __( 'Zoom Area Position', 'yit' ),
                         'desc'    => __( 'The magnifier position', 'yit' ),
@@ -300,28 +327,7 @@ if ( ! class_exists( 'YITH_WCMG_Admin' ) ) {
                         'default' => __( 'Loading...', 'yit' ),
                         'type'    => 'text',
                     ),
-                    /*
-                                        array(
-                                            'name' => __( 'Tint', 'yit' ),
-                                            'desc' => '',
-                                            'id'   => 'yith_wcmg_tint',
-                                            'std'  => '',
-                                            'default' => '',
-                                            'type' => 'picker',
-                                        ),
 
-                                        array(
-                                            'name' => __( 'Tint Opacity', 'yit' ),
-                                            'desc' => '',
-                                            'id'   => 'yith_wcmg_tint_opacity',
-                                            'std'  => 0.5,
-                                            'default'  => 0.5,
-                                            'type' => 'slider',
-                                            'min'  => 0,
-                                            'max'  => 1,
-                                            'step' => .1
-                                        ),
-                    */
                     array(
                         'name'    => __( 'Lens Opacity', 'yit' ),
                         'desc'    => '',
@@ -333,19 +339,7 @@ if ( ! class_exists( 'YITH_WCMG_Admin' ) ) {
                         'max'     => 1,
                         'step'    => .1
                     ),
-                    /*
-                                        array(
-                                            'name' => __( 'Smoothness', 'yit' ),
-                                            'desc' => '',
-                                            'id'   => 'yith_wcmg_smooth',
-                                            'std'  => 3,
-                                            'default'  => 3,
-                                            'type' => 'slider',
-                                            'min'  => 1,
-                                            'max'  => 5,
-                                            'step' => 1
-                                        ),
-                    */
+
                     array(
                         'name'    => __( 'Blur', 'yit' ),
                         'desc'    => __( 'Add a blur effect to the small image on mouse hover.', 'yit' ),
@@ -512,15 +506,15 @@ if ( ! class_exists( 'YITH_WCMG_Admin' ) ) {
 
             ?>
             <tr valign="top">
-            <th scope="row" class="titledesc">
-                <label for="<?php echo esc_attr( $value['id'] ); ?>"><?php echo $value['name']; ?></label>
-            </th>
-            <td class="forminp">
-                <div class="color_box"><strong><?php echo $value['name']; ?></strong>
-                    <input name="<?php echo esc_attr( $value['id'] ) ?>" id="<?php echo esc_attr( $value['id'] ) ?>" type="text" value="<?php echo $picker_value ?>" class="colorpick" />
+                <th scope="row" class="titledesc">
+                    <label for="<?php echo esc_attr( $value['id'] ); ?>"><?php echo $value['name']; ?></label>
+                </th>
+                <td class="forminp">
+                    <div class="color_box"><strong><?php echo $value['name']; ?></strong>
+                        <input name="<?php echo esc_attr( $value['id'] ) ?>" id="<?php echo esc_attr( $value['id'] ) ?>" type="text" value="<?php echo $picker_value ?>" class="colorpick" />
 
-                    <div id="colorPickerDiv_<?php echo esc_attr( $value['id'] ) ?>" class="colorpickdiv"></div>
-                </div> <?php echo $value['desc']; ?></td>
+                        <div id="colorPickerDiv_<?php echo esc_attr( $value['id'] ) ?>" class="colorpickdiv"></div>
+                    </div> <?php echo $value['desc']; ?></td>
             </tr>
         <?php
         }
@@ -564,7 +558,7 @@ if ( ! class_exists( 'YITH_WCMG_Admin' ) ) {
             $force = get_option( 'yith_wcmg_force_sizes' ) == 'yes';
 
             if ( $force ) {
-                $value['desc'] = 'These values ​​are automatically calculated based on the values ​​of the Single product. If you\'d like to customize yourself the values, please disable the "Forcing Zoom Image sizes" in "Magnifier" tab.';
+                $value['desc'] = 'These values ??are automatically calculated based on the values ??of the Single product. If you\'d like to customize yourself the values, please disable the "Forcing Zoom Image sizes" in "Magnifier" tab.';
             }
 
             if ( $force && isset( $_GET['page'] ) && isset( $_GET['tab'] ) && ( $_GET['page'] == 'woocommerce_settings' || $_GET['page'] == 'wc-settings' ) && $_GET['tab'] == 'catalog' ): ?>

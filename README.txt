@@ -70,6 +70,12 @@ The size of the Zoom Image is automatically setted. If you want to change these 
 
 == Changelog ==
 
+= 1.1.2 =
+
+* Restored: Image size options on WC 2.1.x
+* Fixed: Items number option on thumb slider 
+* Fixed: Hard crop issue on WC 2.1.x
+
 = 1.1.1 =
 
 * Fixed: Thumbnails slider direction on single product page

@@ -4,7 +4,7 @@
  *
  * @author 		YIThemes
  * @package 	YITH_Magnifier/Templates
- * @version     1.1.1
+ * @version     1.1.2
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -68,6 +68,7 @@ $enable_slider = get_option('yith_wcmg_enableslider') == 'yes' ? true : false;
                 visible: <?php echo apply_filters( 'woocommerce_product_thumbnails_columns', get_option( 'yith_wcmg_slider_items', 3 ) ) ?>
             }
         },
+
         <?php endif ?>
 
         showTitle: false,

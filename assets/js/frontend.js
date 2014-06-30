@@ -3,7 +3,7 @@
  *
  * @author Your Inspiration Themes
  * @package YITH WooCommerce Zoom Magnifier
- * @version 1.1.1
+ * @version 1.1.2
  */
 jQuery(document).ready(function($){
 
