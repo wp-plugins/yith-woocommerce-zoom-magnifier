@@ -11,7 +11,12 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 global $post, $woocommerce, $product, $is_IE;
 
-$enable_slider = get_option('yith_wcmg_enableslider') == 'yes' ? true : false;
+$enable_slider 	= get_option('yith_wcmg_enableslider') == 'yes' ? true : false;
+$placeholder 	= function_exists('wc_placeholder_img_src') ? wc_placeholder_img_src() : woocommerce_placeholder_img_src();
+
+$slider_items = get_option( 'yith_wcmg_slider_items', 3 );
+if ( !isset($slider_items) || ( $slider_items == null ) ) $slider_items = 3;
+
 ?>
     <div class="images<?php if($is_IE): ?> ie<?php endif ?>">
 
@@ -22,8 +27,6 @@ $enable_slider = get_option('yith_wcmg_enableslider') == 'yes' ? true : false;
             $image_title 		= esc_attr( get_the_title( get_post_thumbnail_id() ) );
             $image_link  		= wp_get_attachment_url( get_post_thumbnail_id() );
             list( $magnifier_url, $magnifier_width, $magnifier_height ) = wp_get_attachment_image_src( get_post_thumbnail_id(), "shop_magnifier" );
-
-            $placeholder = function_exists('wc_placeholder_img_src') ? wc_placeholder_img_src() : woocommerce_placeholder_img_src();
 
             echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="yith_magnifier_zoom woocommerce-main-image" title="%s">%s</a>', $magnifier_url, $image_title, $image ), $post->ID );
 
@@ -65,7 +68,7 @@ $enable_slider = get_option('yith_wcmg_enableslider') == 'yes' ? true : false;
             },
             items   : {
                 //width: <?php echo yit_shop_thumbnail_w() + 4 ?>,
-                visible: <?php echo apply_filters( 'woocommerce_product_thumbnails_columns', get_option( 'yith_wcmg_slider_items', 3 ) ) ?>
+                visible: <?php echo apply_filters( 'woocommerce_product_thumbnails_columns', $slider_items ) ?>
             }
         },
 

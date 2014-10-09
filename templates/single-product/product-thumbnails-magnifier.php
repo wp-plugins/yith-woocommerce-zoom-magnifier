@@ -24,6 +24,8 @@ if ( $attachment_ids ) {
         $loop = 0;
         $columns = apply_filters( 'woocommerce_product_thumbnails_columns', get_option( 'yith_wcmg_slider_items', 3 ) );
 
+        if( !isset( $columns ) || $columns == null ) $columns = 3;
+
         foreach ( $attachment_ids as $attachment_id ) {
             $classes = array( 'yith_magnifier_thumbnail' );
 

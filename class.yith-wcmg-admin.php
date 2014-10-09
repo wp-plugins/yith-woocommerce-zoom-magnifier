@@ -440,6 +440,7 @@ if ( ! class_exists( 'YITH_WCMG_Admin' ) ) {
             foreach ( $this->options as $section ) {
                 foreach ( $section as $value ) {
                     if ( isset( $value['std'] ) && isset( $value['id'] ) ) {
+
                         if ( $value['type'] == 'image_width' ) {
                             add_option( $value['id'] . '_width', $value['std'] );
                             add_option( $value['id'] . '_height', $value['std'] );
@@ -447,6 +448,19 @@ if ( ! class_exists( 'YITH_WCMG_Admin' ) ) {
                         else {
                             add_option( $value['id'], $value['std'] );
                         }
+
+                        /* fix item number slider */
+
+                        if($value['id']=='yith_wcmg_slider_items'){
+
+                            $current_value = get_option( 'yith_wcmg_slider_items' );
+
+                            if ( ! isset( $current_value ) || $current_value == null || $current_value === false || ! is_numeric( $current_value ) ) {
+                                update_option( 'yith_wcmg_slider_items', $value['std'] );
+                            }
+
+                        }
+
                     }
                 }
             }
