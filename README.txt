@@ -23,7 +23,7 @@ Working demo are available:
 **[LIVE DEMO 1](http://preview.yithemes.com/room09/product/africa-style/)** - **[LIVE DEMO 2](http://preview.yithemes.com/bazar/shop/ankle-shoes/)**
 
 
-Full documentation is available [here](http://yithemes.com/docs-plugins/yith_magnifier/).
+Full documentation is available [here](http://yithemes.com/docs-plugins/yith_woocommerce_magnifier/).
 
 
 = Installation =
@@ -36,7 +36,7 @@ YITH WooCommerce Zoom Magnifier will add a new tab called "Magnifier" below the 
 
 = Developer =
 
-Are you a developer? Want to customize the templates or the style of the plugin? Read on the [documentation](http://yithemes.com/docs-plugins/yith_magnifier/) and discover how to do that.
+Are you a developer? Want to customize the templates or the style of the plugin? Read on the [documentation](http://yithemes.com/docs-plugins/yith_woocommerce_magnifier/) and discover how to do that.
 
 = Support =
 
@@ -150,7 +150,7 @@ If you have created your own language pack, or have an update for an existing on
 
 == Documentation ==
 
-Full documentation is available [here](http://yithemes.com/docs-plugins/yith_magnifier/).
+Full documentation is available [here](http://yithemes.com/docs-plugins/yith_woocommerce_magnifier/).
 
 == Upgrade notice ==
 
