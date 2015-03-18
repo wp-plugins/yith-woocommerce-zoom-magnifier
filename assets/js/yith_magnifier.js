@@ -6,6 +6,7 @@
  *
  * MIT License.
  */
+
 ;(function( window, $, undefined ) {
     'use strict';
 
