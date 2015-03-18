@@ -1,15 +1,14 @@
 === YITH WooCommerce Zoom Magnifier ===
 
 Contributors: yithemes
-Tags: zoom, magnifier, woocommerce, products, themes, yit, e-commerce, shop
+Tags: zoom, magnifier, woocommerce, product image, themes, yit, e-commerce, shop, thumbnail, thumbnail slider, zoom image, carousel, image carousel
 Requires at least: 3.5.1
 Tested up to: 4.1
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-YITH WooCommerce Zoom Magnifier is a Wordpress plugins that enables you to add a zoom effect to product images.
-WooCommerce 2.2.x Compatible.
+YITH WooCommerce Zoom Magnifier add zoom effect to product images and a customizable image slider.
 
 == Description ==
 
@@ -18,13 +17,15 @@ WooCommerce 2.2.x Compatible.
 Offer to your visitors a chance to inspect in detail the quality of your products. With YITH WooCommerce Zoom Magnifier you can add a zoom effect to all your product images.
 The Wordpress plugin also adds a slider below the featured image with your product gallery images.
 
-Working demo are available:
+= Main features =
 
-**[LIVE DEMO 1](http://preview.yithemes.com/room09/product/africa-style/)** - **[LIVE DEMO 2](http://preview.yithemes.com/bazar/shop/ankle-shoes/)**
-
+* Show a bigger size product image on mouseover.
+* Customize zoom area width and height and the size of the image to show as zoomed image.
+* Enable or disable it on mobile devices.
+* Add a slider showing product image thumbnails.
+* Customize the slider behavior.
 
 Full documentation is available [here](http://yithemes.com/docs-plugins/yith_woocommerce_magnifier/).
-
 
 = Installation =
 
@@ -65,10 +66,19 @@ The size of the Zoom Image is automatically setted. If you want to change these 
 
 == Screenshots ==
 
-1. The plugin at work displaying the magnifier
-2. The Magnifier settings page
+1. The General plugin settings page. You can disable the plugin for mobile devices.
+2. The Magnifier settings page. Choose the size of the zoom area, the size of the image to be shown in zoom area and the its position (on the right or over the image).
+3. The slider settings page. You can choose to use the slider for product image thumbnails, set how many images to show within the slider, and the behavior of the slider, choosing if circular, infinite or standard carousel.
+4. The zoom applied to a product image, showing zoomed image on the right side.
+5. The zoom applied to a product image, showing zoomed image over the same image.
+6. Choose how many items the slider should show, the image thumbnails will fit the available width.
 
 == Changelog ==
+
+= 1.1.6 =
+
+* Added: the plugin can be disabled on mobile devices.
+
 = 1.1.5 =
 
 * Fixed: multiple wrap

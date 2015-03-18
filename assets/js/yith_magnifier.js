@@ -138,11 +138,6 @@
         })(jQuery);
     }
 
-
-
-
-
-
     $.yith_magnifier = function( options, element ) {
         this.t = element;
         this.element = $( element );
@@ -271,8 +266,8 @@
                 var w = this.options.elements.zoom.width();
 
                 $('<div class="yith_magnifier_loading">' + this.options.loadingLabel + '</div>').css({
-                    width: w / 3,
-                    left: (w / 2) - (w / 6),
+                    'width' : w,
+                    'text-align': 'center',
                     opacity: .5
                 }).appendTo(this.options.elements.zoom.parent());
             }
@@ -291,7 +286,7 @@
 
             //wrap the zoom image with a div
             //if( !self.zoom.parent().hasClass('yith_magnifier_zoom_wrap') ) {
-                self.zoom.wrap('<div class="yith_magnifier_zoom_wrap"></div>');
+            self.zoom.wrap('<div class="yith_magnifier_zoom_wrap"></div>');
             //}
 
             self.IMG_zoomImage = new Image();
@@ -355,6 +350,8 @@
                 left: 0
             }).appendTo(zoom.parent());
 
+            $('<a href="#" class="pp_expand" title="Expand the image" style="display: inline;">Expand</a>').appendTo(this.mouseTrap );
+
             // Detect device type, normal mouse or touchy(ipad android) by albanx
             var touchy  = ("ontouchstart" in document.documentElement) ? true : false;
             var event_move  = 'touchmove mousemove';
@@ -370,16 +367,16 @@
 
             }).on(event_end, this, function (e) {
 
-                    clearTimeout(self.controlTimer);
-                    //event.data.removeBits();
-                    if(self.lens) { self.lens.fadeOut(299); }
-                    if(self.tint) { self.tint.fadeOut(299); }
-                    if(self.softFocus) { self.softFocus.fadeOut(299); }
-                    self.zoomDiv.fadeOut(300, function () {
-                        self._onLeave();
-                    });
+                clearTimeout(self.controlTimer);
+                //event.data.removeBits();
+                if(self.lens) { self.lens.fadeOut(299); }
+                if(self.tint) { self.tint.fadeOut(299); }
+                if(self.softFocus) { self.softFocus.fadeOut(299); }
+                self.zoomDiv.fadeOut(300, function () {
+                    self._onLeave();
+                });
 
-                    return false;
+                return false;
 
             }).on(event_click, this, function (e) {
                 self.options.onClick();
@@ -461,6 +458,7 @@
                     top: yPos,
                     width: w,
                     height: h,
+                    'background-repeat': 'no-repeat',
                     backgroundImage: 'url('+ zoomImg.src + ')'
                 }).appendTo(appendTo);
 
@@ -719,6 +717,7 @@
     };
 
     $.fn.yith_magnifier = function( options ) {
+
         if ( typeof options === 'string' ) {
             var args = Array.prototype.slice.call( arguments, 1 );
 
@@ -726,7 +725,7 @@
                 var instance = $.data( this, 'yith_magnifier' );
                 if ( !instance ) {
                     $.error( "cannot call methods on yith_magnifier prior to initialization; " +
-                        "attempted to call method '" + options + "'" );
+                    "attempted to call method '" + options + "'" );
                     return;
                 }
                 if ( !$.isFunction( instance[options] ) || options.charAt(0) === "_" ) {
