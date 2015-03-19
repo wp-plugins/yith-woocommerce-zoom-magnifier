@@ -25,36 +25,19 @@ The Wordpress plugin also adds a slider below the featured image with your produ
 * Add a slider showing product image thumbnails.
 * Customize the slider behavior.
 
+Discover all the features of the plugin and install it in your theme: the result will be extremely satisfying.
 Full documentation is available [here](http://yithemes.com/docs-plugins/yith_woocommerce_magnifier/).
 
-= Installation =
-
-Once you have installed the plugin, you just need to activate the plugin in order to enable it.
-
-= Configuration =
-
-YITH WooCommerce Zoom Magnifier will add a new tab called "Magnifier" below the Woocommerce -> Settings menu. Here you are able to configure all the plugin settings.
-
-= Developer =
-
-Are you a developer? Want to customize the templates or the style of the plugin? Read on the [documentation](http://yithemes.com/docs-plugins/yith_woocommerce_magnifier/) and discover how to do that.
-
-= Support =
-
-Hi there, we have good news here: all our plugins are released for free. Wow!
-Already knew it, right?! Great, but maybe you do not know that: if you're looking for how to install the plugins or how to use them within your Wordpress installations, which is the right way to ask support?
-That's the way:
-
-* Register on http://yithemes.com
-* Go to Support > Get Support
-
-Here we provide support, not on wordpress.org were, usually we do not read topics. It's better to follow us or write on our forum!
-
 == Installation ==
+Important: First of all, you have to download and activate WooCommerce plugin, which is mandatory for Yith WooCommerce Zoom Magnifier to be working.
 
 1. Unzip the downloaded zip file.
 2. Upload the plugin folder into the `wp-content/plugins/` directory of your WordPress site.
 3. Activate `YITH WooCommerce Zoom Magnifier` from Plugins page
+
+= Configuration =
+
+YITH WooCommerce Zoom Magnifier will add a new tab called "Zoom Magnifier" in "YIT Plugins" menu item. There, you will find all Yithemes plugins with quick access to plugin setting page.
 
 == Frequently Asked Questions ==
 
