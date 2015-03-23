@@ -4,7 +4,7 @@ Contributors: yithemes
 Tags: zoom, magnifier, woocommerce, product image, themes, yit, e-commerce, shop, thumbnail, thumbnail slider, zoom image, carousel, image carousel
 Requires at least: 3.5.1
 Tested up to: 4.1
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,10 @@ The size of the Zoom Image is automatically setted. If you want to change these 
 6. Choose how many items the slider should show, the image thumbnails will fit the available width.
 
 == Changelog ==
+
+= 1.1.7 =
+
+* Fixed: Unwanted expand link on product image.
 
 = 1.1.6 =
 

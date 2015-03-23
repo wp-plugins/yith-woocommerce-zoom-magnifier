@@ -351,8 +351,6 @@
                 left: 0
             }).appendTo(zoom.parent());
 
-            $('<a href="#" class="pp_expand" title="Expand the image" style="display: inline;">Expand</a>').appendTo(this.mouseTrap );
-
             // Detect device type, normal mouse or touchy(ipad android) by albanx
             var touchy  = ("ontouchstart" in document.documentElement) ? true : false;
             var event_move  = 'touchmove mousemove';
