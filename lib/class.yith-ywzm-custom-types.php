@@ -48,11 +48,11 @@ if ( ! class_exists( 'YITH_YWZM_Custom_Types' ) ) {
 			add_action( 'woocommerce_admin_field_picker', array( $this, 'admin_fields_picker' ) );
 			add_action( 'woocommerce_update_option_picker', array( $this, 'admin_update_option' ) );
 
-			add_action( 'woocommerce_admin_field_yit_wc_image_width', array(
+			add_action( 'woocommerce_admin_field_yith_ywzm_image_width', array(
 				$this,
-				'admin_fields_yit_wc_image_width'
+				'admin_fields_yith_ywzm_image_width'
 			) );
-			add_action( 'woocommerce_update_option_yit_wc_image_width', array( $this, 'yit_upload_update' ), 10, 1 );
+			add_action( 'woocommerce_update_option_yith_ywzm_image_width', array( $this, 'yit_upload_update' ), 10, 1 );
 		}
 
 		/**
@@ -156,14 +156,14 @@ if ( ! class_exists( 'YITH_YWZM_Custom_Types' ) ) {
 		}
 
 		/**
-		 * Create new Woocommerce admin field: yit_wc_image_width
+		 * Create new Woocommerce admin field: yith_ywzm_image_width
 		 *
 		 * @access public
 		 * @param array $value
 		 * @return void
 		 * @since 1.1.3
 		 */
-		public function admin_fields_yit_wc_image_width( $value ){
+		public function admin_fields_yith_ywzm_image_width( $value ){
 
 			$width 	= WC_Admin_Settings::get_option( $value['id'] . '[width]', $value['default']['width'] );
 			$height = WC_Admin_Settings::get_option( $value['id'] . '[height]', $value['default']['height'] );
