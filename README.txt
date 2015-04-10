@@ -25,8 +25,9 @@ The Wordpress plugin also adds a slider below the featured image with your produ
 * Add a slider showing product image thumbnails.
 * Customize the slider behavior.
 
+For a more detailed list of options and features of the plugin, please look at the [official documentation](http://yithemes.com/docs-plugins/yith_woocommerce_magnifier/ "Yith WooCommerce Zoom Magnifier official documentation").
+
 Discover all the features of the plugin and install it in your theme: the result will be extremely satisfying.
-Full documentation is available [here](http://yithemes.com/docs-plugins/yith_woocommerce_magnifier/).
 
 == Installation ==
 Important: First of all, you have to download and activate WooCommerce plugin, which is mandatory for Yith WooCommerce Zoom Magnifier to be working.
