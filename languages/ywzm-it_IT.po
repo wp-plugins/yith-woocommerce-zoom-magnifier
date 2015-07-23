@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH WooCommerce Zoom Magnifier\n"
-"POT-Creation-Date: 2015-07-23 14:58+0200\n"
-"PO-Revision-Date: 2015-07-23 14:59+0200\n"
+"POT-Creation-Date: 2015-07-23 15:49+0200\n"
+"PO-Revision-Date: 2015-07-23 15:49+0200\n"
 "Last-Translator: \n"
 "Language-Team: Your Inspiration Themes <plugins@yithemes.com>\n"
 "Language: it_IT\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: class.yith-wcmg-admin.php:91
 msgid "Image Size"
-msgstr "Dimensione Immagine"
+msgstr "Dimensioni Immagine"
 
 #: class.yith-wcmg-admin.php:92 plugin-options/general-options.php:17
 msgid "The size of the images used within the magnifier box"
-msgstr "La dimensione delle immagini utilizzata nella finestra di zoom"
+msgstr "La dimensione delle immagini utilizzata nel riquadro di zoom"
 
 #: init.php:43
 msgid ""
@@ -134,23 +134,23 @@ msgstr "Impostazioni Zoom"
 
 #: plugin-options/general-options.php:78
 msgid "Zoom Box Width"
-msgstr "Larghezza Finestra Zoom"
+msgstr "Larghezza Riquadro Zoom"
 
 #: plugin-options/general-options.php:79
 msgid "The width of the magnifier box (default: auto)"
-msgstr "La larghezza della finestra di zoom (default: auto)"
+msgstr "La larghezza del riquadro di zoom (default: auto)"
 
 #: plugin-options/general-options.php:86
 msgid "Zoom Box Height"
-msgstr "Altezza Finestra Zoom"
+msgstr "Altezza Riquadro Zoom"
 
 #: plugin-options/general-options.php:87
 msgid "The height of the magnifier box (default: auto)"
-msgstr "L'altezza della finestra di zoom (default: auto)"
+msgstr "L'altezza del riquadro di zoom (default: auto)"
 
 #: plugin-options/general-options.php:95
 msgid "Zoom Box Position"
-msgstr "Posizione Finestra Zoom"
+msgstr "Posizione Riquadro Zoom"
 
 #: plugin-options/general-options.php:96
 msgid "The magnifier position"
@@ -163,11 +163,11 @@ msgstr "Destra"
 #: plugin-options/general-options.php:103
 #: plugin-options/general-options.php:115
 msgid "Inside"
-msgstr "Interna"
+msgstr "Interno"
 
 #: plugin-options/general-options.php:107
 msgid "Zoom Box Position for mobile devices"
-msgstr "Posizione Finestra Zoom per dispositivi mobili"
+msgstr "Posizione Riquadro Zoom su dispositivi mobili"
 
 #: plugin-options/general-options.php:108
 msgid "The magnifier position for the mobile devices (iPhone, Android, etc.)"
@@ -185,7 +185,7 @@ msgstr "Disattiva"
 
 #: plugin-options/general-options.php:120
 msgid "Loading label"
-msgstr "Caricamento etichetta"
+msgstr "Etichetta di caricamento"
 
 #: plugin-options/general-options.php:123
 #: plugin-options/general-options.php:124
@@ -232,11 +232,11 @@ msgstr ""
 
 #: plugin-options/general-options.php:173
 msgid "Items"
-msgstr "Oggetti"
+msgstr "Elementi"
 
 #: plugin-options/general-options.php:174
 msgid "Number of items to show"
-msgstr "Numero di oggetti da mostrare"
+msgstr "Numero di elementi da mostrare"
 
 #: plugin-options/general-options.php:184
 msgid "Circular carousel"
@@ -409,7 +409,7 @@ msgstr "Premi per visualizzare l'anteprima"
 #~ msgstr "Seleziona almeno un prodotto"
 
 #~ msgid "Exclude product categories"
-#~ msgstr "Escludi categorie di prodotto"
+#~ msgstr "Escludi categorie di prodotti"
 
 #~ msgid "Top"
 #~ msgstr "Sopra"
